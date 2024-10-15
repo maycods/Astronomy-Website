@@ -1,0 +1,206 @@
+
+/* Elements generales */
+
+*{
+	box-sizing:border-box;/*box-sizing: définit la façon dont la hauteur et la largeur totale de l élément est calculée et le border-box: inclut le contenu, le padding et la bordure */
+	padding:0;
+	margin:0;
+	overflow-x: hidden;/*cacher le contenu qui dépasse des bords droit et gauche de la boîte de contenu.*/
+}
+header{
+	background-color:#003249;
+	border-bottom: 3px solid #80CED7 ;
+	display:flex; /*pour rendre le conteneur: header flexible **/
+	
+}
+body{	
+	background-color:#F0F8FF; 
+}
+footer{
+	color: white;
+    background-color: #003247;
+}
+.footer2{/*un div dans le footer où on lui donne une aute couleur de fond */
+	background-color:	#0b1d26;
+	padding:3%;
+}
+
+/*contenu header */ 
+
+.headertitle{
+	 width: 50%;/*sa largeur prendra 50% de l element parent*/ 
+}
+nav{
+ padding: 1% 0px;  /*ajouter padding en haut et en bas*/ 
+	width:100%; /*sa largeur prendra 100% de l element parent*/
+	align:center;/*center le nav*/
+}
+ul{
+	list-style-type: none;  /*enlever les puces des elements de la liste*/
+	text-align:center; /*centrer les element de la liste*/
+}  
+li{
+	 display:inline-block;/*s affiche dans la meme ligne mais redimensionable*/
+	padding:1em;
+}
+h1{
+	margin-top:2%;
+	color:white;
+	padding: 0.7% 0;
+}
+
+/* liens */
+
+a{ 
+	text-decoration: none;/*enlever le soulignement*/
+	color: white;
+}
+a:hover{/*quand on survole la souris sur les liens*/
+	color:#80CED7;
+	
+} 
+a.bleu{
+	color:#0077b6;/*pour des soucis de clarté certains lien seront bleu*/
+
+} 
+
+
+
+/*la box */
+
+.box{
+  position: relative;/*position relative a la position de base par default*/
+  left: 13%;/*deplacer a gauche de 13%*/
+  padding: 5%;
+	margin:2%;
+    width: 75%;/*sa largeur prendra 75% de l element parent*/
+    height: 80%;/*sa hauteur prendra 80% de l element parent*/
+    background: white;
+    box-shadow:  12px 0 15px -2px  #335e6f ,-10px 0 8px -2px #335e6f ;/*donne un effect ombre avec la couleur de notre choix et la taille qu on veut*/
+	
+}
+
+
+/*contenu footer*/
+.main-content {
+    display: flex;/*pour rendre le footer flexible */
+}
+ .content {
+
+	padding: 0.5%;
+	margin:1%;
+	width: 100%;/*la largeur prend 100% de la largeur de  l'element parent*/
+	text-align:center;/*centrer l alignement du texte des element de cette classe */
+	
+}
+.main-content h2{
+	color: white;
+    font-size:1.0625rem ; /*equivalent deux 1 px*/
+    text-transform:uppercase ;/*majuscule*/
+	font-family:sans serif;
+	
+}
+
+
+/*drop down dans le nav*/
+
+.dropdown-content {
+  display: none;/*l element est caché*/
+  position: absolute;/*position fixe*/
+  background-color: #003247;
+  min-width: 160px;/*largeur minimale*/
+  box-shadow: 0px 8px 16px 0px  #335e6f ;
+  border:1px solid  #80CED7 ;
+  z-index: 1;/*lors d un chevauchement entre 2 elements le z indexe definit qui sera au dessus de l autre */
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;/*pas de souligenemt du lien*/
+  display: block;
+  text-align: left;/*texte aligné vers la gauche*/
+}
+.dropdown-content a:hover {
+color: #80CED7;
+}
+.dropbtn{
+	background-color: #003247;
+	color:white;
+	border:0;/*pas de bord (pour enlever les bord du bouton (de cette classe) par defaut ) */
+}
+.dropdown:hover .dropdown-content {
+  display: block;/*l element s affiche quand on le survole*/
+}
+
+/* embelissement */
+
+hr{/*donner un effet neon au hr */
+	 box-shadow: 0px 2px 10px 0px  #80CED7, 0px 4px 10px 0px  #80CED7;/*effet ombre mais avec couleur clair ce qui aide dans l effect neon auquel on a pensé*/
+	background-color: #80CED7;/*couleur de fond*/
+	  border: 1px solid  #80CED7;/*epaisseur et couleur de la bordure*/
+}
+
+/* disposition du text */
+
+.centre {
+	text-align:center;/*les elements de cette classe sont centré (pour eviter d untiliser la balise <center> qui n a pas sa place en html -separer la mise en forme du contenu)*/
+}
+.hr2{
+	color: #335e6f ;
+	background-color: #335e6f;
+	border: 1px solid #335e6f;
+	 box-shadow: none  ;/*pas d'effet ombre */
+
+}
+.gauche{
+	float:left;/*l element va flotter a gauche de son conteneur*/
+	width: 50%;/*sa largeur prendra 50% de l element parent*/
+	padding:1%;
+	}
+.droit{
+	float:right;/*l element va flotter a droite de son conteneur*/
+	width: 35%;	/*sa largeur prendra 35% de l element parent*/
+	padding:1%;
+	
+}
+.pading{/*pour que les div de cette classe laisse de l espace a gauche et a droite*/
+	padding-left:8%;
+	padding-right:8%;
+}
+p , .liste {
+	 font-family: sans serif;/*la police sans "le embellisement" serif*/
+	   font-size: 115%; /*taille du texte */
+	   text-align: justify;/*justifié le texte*/
+	    line-height:160% ;/*la heuteur des lignes*/
+		padding:1%;/*l espace entre le contenu et le conteneur*/
+}
+section , article{
+	display:flex;
+	justify-content:center;
+}
+.liste {/*remettre pour les elements de cette classe les valeurs par defaut des propriétées des li qui ont etaient modifié pour la liste du nav*/
+    display: list-item; 
+	list-style: inside;
+	list-style-type: decimal;
+}
+
+/* images */
+
+img{
+	float: left;/*l element va flotter a gauche de son conteneur*/
+	width:100%;
+	padding-top:11%;
+	height:100%;
+}
+.topp{
+	padding-top:0 !important;/*important defninit la priorité quand y a 2 definition pr le meme element*/
+}
+#logo{
+    float: left;/*l element va flotter a gauche de son conteneur*/
+    width: 10%;
+	height:10%;
+    padding-top: 0;/*pour overrite le "padding-top:11%;" de img*/
+}
+
+
+

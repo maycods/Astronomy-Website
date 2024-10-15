@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--Définition du type du document (html)-->
+<html lang="fr">
+<!--Balise html qui est l’élément racine du document et qui contient l’attribut lang qui 
+	indique la langue utilisée par défaut dans la page (français dans notre cas) -->
+
+<head>
+	<!-- contient une  description de notre page  ainsi que les informations utiles pour un meilleur affichage.(contenu invisible) -->
+	<title>Astro &#178; </title>
+	<!--élement  title utilisé pour attribuer un titre à notre page-->
+	<!--Définitions des méta-informations relatives à notre page , déstinées au serveur-web-->
+	<meta charset="UTF-8" />
+	<!--Format d'encodage-->
+	<meta name="description" content="introduction à l'astronomie et l'astrophysique">
+	<meta name="keywords" content="histoire de l'astronomie, espace , univers">
+	<meta name="author" content="Houacine Maya ,Leffat Wissam ,Hadjoudj Lynda">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="imagess/tlscope.png" rel="icon">
+	<!--utilisé pour définir un lien vers des ressources externe qui est une image dans notre cas-->
+	<link rel="stylesheet" href="style.css">
+	<!--Lien vers notre fichier css-->
+
+</head>
+
+<body>
+	<header>
+		<!--Section d'introduction qui contient  notre logoo,et les liens de navigations-->
+		<img id="logo" src="imagess/tlscope.png" alt="logo">
+		<!--Définition d'une image ( notre logo )-->
+		<div class="headertitle">
+			<!--Définition d'une division qui contient le titre de notre page-->
+
+			<h1> Astronomie &amp; Astrophysique</h1>
+			<hr><!-- retour à la ligne, en insérant une ligne horizontale-->
+
+		</div>
+
+		<nav>
+			<!-- définition de la partie de navigation avec un menu et des liens pour se déplacer dans le site.-->
+			<ul>
+				<!-- définition d'une Liste  non ordonnée-->
+				<!--la balise<li> précise  les différents éléments de la liste.-->
+				<li><a href="Indexe.html">Acceuil</a></li>
+				<!-- Définit un hyperlien  dont l’adresse de 
+					destination est définie dans l’attribut href ( lien externe vers la page indexe.html dans ce cas)-->
+				<li><a href="pages/chrono.html">Chronologie de l astronomie</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Astres &#9661; </button><!-- définition d'un bouton personnalisé-->
+						<div class="dropdown-content">
+							<a href="pages/Trounoir.html">Les Trous Noirs</a>
+							<a href="pages/supernovae.html">La supernovae</a>
+							<a href="pages/FSS.html">La Formation du systeme solaire</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<!--Définition d'une division qui contient   un ensemble de titres sui représentent des liens vers les autres pages -->
+						<button class="dropbtn">Theories sur l'univers &#9661; </button>
+						<div class="dropdown-content">
+							<a href="pages/chat.html">Le chat de Schrödinger</a>
+							<a href="pages/paral.html">Les univers parallèles</a>
+							<a href="pages/filtre.html">Le Grand Filtre</a>
+							<a href="pages/fermi.html">Le Paradoxe de Fermi</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="pages/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<main>
+		<!--Définition du contenu  principal de notre document-->
+		<div class="box">
+			<!--Définition d'une division qui contient les articles de  notre page-->
+			<article>
+				<!--Définition d'un article  au lieu d'une section car il a une valeur sémantique de plus  qu'il est indépendant  -->
+				<div class="gauche">
+					<!--Définition d'une division  sur le coté gauche de la page-->
+					<h2>L’histoire de l’astronomie</h2>
+					<!--Définition du titre-->
+					<hr class="hr2"></br>
+					<p>
+						<!--Définition du paragraphe-->
+						Cette article retrace
+						<a class="bleu" title="cliquez pour en apprendre plus" href="pages/chrono.html">l’histoire de
+							l’astronomie</a>
+						, ses origines dans les civilisations antiques, son développement pendant le miracle grec et
+						l’âge d’or de l’Islam, son entrée dans l’époque moderne avec <em>Nicolas Copernic, Tycho Brahe,
+							Johannes Kepler, Galileo Galilei,</em> et enfin la naissance de la mécanique céleste avec
+						Isaac
+						Newton. Elle détaille ensuite l’histoire de l’astrophysique, qui, née grâce à l’analyse
+						spectrale, nous a permis d’étudier la nature physique des corps célestes. Elle explore
+						finalement les moyens de l’astronomie moderne, en particulier les télescopes spatiaux et
+						l’observation dans toutes les longueurs d’onde du spectre électromagnétique.
+					</p>
+				</div>
+				<div class="droit">
+					<!--Définition d'une division sur le coté droit de la page-->
+					<figure>
+						<img src="imagess/spacee.jpg" alt="espace">
+					</figure>
+				</div>
+			</article>
+
+			<article>
+				<div class="gauche">
+					<figure>
+						<div><img src="imagess/vraitrounoiir.png" alt="trou noir"></div></br>
+						<figcaption class="centre">Veritable image d'un trou noir </figcaption>
+						<!--associer une légende à la figure-->
+					</figure>
+				</div>
+				<div class="droit">
+					<h2>Les étoiles massives</h2>
+					<hr class="hr2"></br>
+					<p>
+						Ici on explore l’évolution des étoiles les plus massives et passe en revue les corps stellaires
+						les plus extrêmes : supergéantes,
+						<a class="bleu" title="cliquez pour en apprendre plus"
+							href="pages/supernovae.html">supernovæ</a>
+						<!--Définit un hyperlien  dont l’adresse de 
+								destination est définie dans l’attribut href et le titre dans l'attribut title ( lien externe vers la page supernovae.html dans ce cas)-->
+						, étoiles à neutrons, pulsars, sursauts gamma et
+						<a class="bleu" title="cliquez pour en apprendre plus" href="pages/Trounoir.html">trous
+							noirs</a>
+						Pour mieux comprendre ces derniers, il nous introduit à la relativité restreinte et à la
+						relativité générale, à la notion de courbure de l’espace-temps, et en profite pour expliquer
+						d’autres phénomènes astronomiques comme les lentilles gravitationnelles et les ondes
+						gravitationnelles.
+
+					</p>
+				</div>
+			</article>
+
+			<article>
+
+				<div class="gauche">
+					<h2>L'Univers</h2>
+					<hr class="hr2"></br>
+					<p>
+						Ce chapitre s’occupe de cosmologie, l’étude de l’Univers dans son ensemble,
+						de <a class="bleu" title="cliquez pour en apprendre plus" href="pages/FSS.html">La Formation du
+							systeme solaire</a> à la theorie des <a class="bleu" title="cliquez pour en apprendre plus"
+							href="pages/paral.html"> univers parallèles</a>
+						en passant par la physique quantique nottament <a class="bleu"
+							title="cliquez pour en apprendre plus" href="pages/Chat.html">Le chat de schrodinger</a>
+						Il se tourne alors vers l’accélération de l’expansion et sa source présumée, l’énergie noire,
+						avant de se préoccuper de l’avenir de la matière et de l’Univers.
+
+					</p>
+				</div>
+				<div class="droit">
+					<figure>
+						<img src="imagess/universss.jpg" alt="univers">
+						</br>
+						<figcaption>espace</figcaption>
+					</figure>
+				</div>
+			</article>
+
+			<article>
+				</br>
+				<div class="pading">
+					<h2>
+						Les planètes et la vie
+					</h2>
+
+					<hr class="hr2"></br>
+
+					<p>
+						Ce chapitre commence avec un inventaire des différentes méthodes de détection d’exoplanètes et
+						un survol de leurs résultats. Il continue en s’intéressant à la chimie de la vie, à son
+						apparition sur Terre et à sa complexification.
+						Il se tourne ensuite vers les autres planètes pour déterminer les conditions favorables à la vie
+						et passer
+						en revue les différentes tentatives de détection de vie extraterrestre. Il s’interroge
+						finalement sur les résultats décevants de ces recherches et explore quelques idées comme
+						<a class="bleu" title="cliquez pour en apprendre plus" href="pages/fermi.html">le paradoxe de
+							Fermi</a> et <a class="bleu" href="pages/filtre.html"> le Grand Filtre</a>
+
+					</p>
+
+				</div>
+			</article>
+
+		</div>
+	</main>
+
+	<footer>
+		<!-- définit le pied de page qui contient  le copyright, des liens et informations -->
+		<div class="main-content">
+			<!--Définition de la division qui contient la mise à jour,navigation et auteurs-->
+			<div class="content">
+				<h2>Navigation</h2></br>
+
+				<p class="centre">
+					<a href="pages/chrono.html">Chronologie de l astronomie &#8640;</a>
+				</p>
+
+
+			</div>
+			<div class="content">
+				<h2> Mise à jour </h2></br>
+				<p class="centre">08/04/2022</p>
+
+			</div>
+
+			<div class=" content">
+				<h2>Autrices</h2></br>
+				<!-- La dernière version de spécification HTML5 recommande d’utiliser <cite> pour la définition des  noms d’auteurs " -->
+				<cite class="centre">Houacine Maya ,</cite>
+				<cite class="centre">Leffat Wissam , </cite>
+				<cite class="centre">Hadjoudj Lynda </cite>
+
+			</div>
+		</div>
+		<div class="footer2">
+			<!--Définition de la division qui contient le copyright -->
+			<h4 class="centre">Text sous licence Creative Commons</h4>
+			<h5 class="centre">&#169; copyright</h5>
+		</div>
+
+	</footer>
+</body>
+
+</html>

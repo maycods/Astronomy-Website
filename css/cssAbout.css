@@ -1,0 +1,73 @@
+.box2 {
+
+
+    padding: 3%;
+    margin: 2%;
+    width: 40%;
+    height: 40%;
+    background: white;
+    border: 3px solid #80CED7;
+    top: -150px;
+    left: 20%;
+    position: relative;
+    display: inline-block;/* il s’affiche comme un élément inline mais il peut avoir une hauteur et une largeur qu on definit*/
+
+}
+
+
+.img1 {
+	padding:0;
+    margin-left: 10%;
+    display: block;/*l'élément est affiché et se comporte comme un élément de type block*/
+    width: 20%;
+
+}
+
+
+
+
+.input-group {
+
+    margin-bottom: 1%;
+    color: #003249;
+
+}
+
+input,
+textarea {
+
+    padding: 1%;
+    width: 100%;/*sur toute la largeur*/
+    outline: 0;
+    border: 1px solid #335e6f;
+    box-shadow: 0px 8px 16px 0px #335e6f;
+    font-size: 1.0625rem;
+    resize: none;/*interdire le redimensionnement */
+
+
+}
+
+
+blockquote p {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+blockquote p::before { /*les guillemets au début*/
+    content: '\201C';
+}
+
+blockquote p::after { /*les guillemets a la fin*/
+    content: '\201D';
+}
+
+/*définition du style du button  utilisé dans le formulaire*/
+.bouton { 
+    border-radius: 10px; /* arrondir les coins*/
+    font-size: 1em; /*taille du texte */
+    justify-content: center;/*indique la façon dont l'espace doit être réparti entre et autour des éléments*/
+    padding: 1%;
+    cursor: pointer; /*pointeur de la souris au lien de la main*/
+    background-color: #003249;
+    color: white;
+}

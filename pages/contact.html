@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Astro &#178; -Contact-</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="contacter les auteurs">
+	<meta name="author" content="Houacine Maya ,Leffat Wissam ,Hadjoudj Lynda">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../imagess/tlscope.png" rel="icon">
+	<link rel="stylesheet" href="../css/cssAbout.css">
+	<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="../imagess/tlscope.png" alt="logo">
+		<div class="headertitle">
+
+			<h1> Astronomie &amp; Astrophysique</h1>
+			<hr>
+
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../Indexe.html">Acceuil</a></li>
+				<li><a href="chrono.html">Chronologie de l astronomie</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Astres &#9661; </button>
+						<div class="dropdown-content">
+							<a href="Trounoir.html">Les Trous Noirs</a>
+							<a href="supernovae.html">La supernovae</a>
+							<a href="FSS.html">La Formation du systeme solaire</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Theories sur l'univers &#9661; </button>
+						<div class="dropdown-content">
+							<a href="chat.html">Le chat de Schrödinger</a>
+							<a href="paral.html">Les univers parallèles</a>
+							<a href="filtre.html">Le Grand Filtre</a>
+							<a href="fermi.html">Le Paradoxe de Fermi</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<main>
+
+		<div>
+			<img class="img1" src="../imagess/aboutt.png" alt="espace">
+		</div>
+
+		<div class="box2">
+			<h2 class="centre"> Contact </h2></br> </br>
+			<form method='post' action=''>
+				<!--Définition d'un formulaire  ,avec une méthode de transmission post qui  indique   que les données du formulaire sont envoyées dans le corps de requête HTTP,-->
+
+				<p> Vos commentaires, questions ou suggestions sont les bienvenus: </p></br> </br>
+
+				<div class="input-group">
+					<label for="nom"><b> Votre nom </b> </label></br>
+					<!--Label est une étiquette  liée par l'attribut for à l’identifiant id
+						du champ <input> qui lui correspond.-->
+					<!-- <b> met le texte en gras, sans lui conférer d’importance semantique-->
+					<input type="text" id="nom" name='nom' required="required">
+					<!--  il permet de créer une casse qui sert a contenir le nom de la personne , l'attribut required indique que cette case doit etre remplie -->
+					<!--id sert a identifier  l'élement-->
+				</div>
+				</br>
+				<div class="input-group">
+
+					<label for="prenom"><b> Prénom </b></label></br>
+					<input name='prenom' type='text' id="prenom" required="required">
+				</div>
+				</br>
+				<div class="input-group">
+					<label for="email"><b> Votre Email </b></label></br>
+					<input type="email" id="email" required="required">
+
+				</div>
+				</br>
+				<div class="input-group">
+					<label for="message"><b> Message </b></label></br>
+					<textarea id="message" rows="8" required="required"
+						placeholder='saisir votre message...'></textarea>
+				</div>
+				</br>
+				<input class="bouton" type="submit" value="Submit">
+			</from>
+		</div>
+
+		<div class="droit">
+
+
+			<blockquote class="centre" cite="https://www.huxley.net/bnw/four.html">
+				<!--  <blockquote> élément de type bloc permettant de délimiter 
+				une citation.-->
+				<!-- <cite> contient le titre d'une œuvre telle qu'un livre, une chanson, un film dont on a retiré la citation -->
+				<p>
+
+					L'humanité est attirée vers les cieux pour la même raison que nous étions autrefois attirés vers des
+					terres inconnues et à travers la mer ouverte. Nous choisissons d'explorer l'espace parce que cela
+					améliore nos vies et élève notre esprit national. Continuons donc le voyage.
+
+				</p>
+
+				<cite class="centre"> George W. Bush </cite>
+			</blockquote>
+			</br>
+
+			<address>
+				<!--indique des informations de contact.-->
+				<a class="bleu" href="mailto:info@usthb.dz">
+					<p class="centre">Contacter l'auteur</p>
+				</a>
+			</address></br>
+
+
+		</div>
+	
+
+	</main>
+
+	<footer>
+		<div class="main-content">
+			<div class="content">
+				<h2>Navigation</h2></br>
+
+				<p class="centre">
+					<a href="filtre.html"> &#8636; Le Grand Filtre</a></br>
+					<a href="../Indexe.html"> Acceuil &#8640; </a>
+				</p>
+
+
+			</div>
+			<div class="content">
+				<h2> Mise à jour </h2></br>
+				<p class="centre">08/04/2022</p>
+
+			</div>
+
+			<div class=" content">
+				<h2>Autrices</h2></br>
+				<cite class="centre">Houacine Maya ,</cite>
+				<cite class="centre">Leffat Wissam , </cite>
+				<cite class="centre">Hadjoudj Lynda </cite>
+
+			</div>
+		</div>
+		<div class="footer2">
+			<h4 class="centre">Text sous licence Creative Commons</h4>
+			<h5 class="centre">&#169; copyright</h5>
+		</div>
+
+	</footer>
+</body>
+
+</html>

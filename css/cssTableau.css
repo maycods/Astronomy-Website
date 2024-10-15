@@ -1,0 +1,59 @@
+table,
+td
+ {
+  /*Faire en sorte que les bordures du tableau soient fusionnées*/
+  border-collapse: collapse;
+  /*Faire le margin top et bottom a 3 et pour le right,left a 10% pour avoir le titre sur la bonne position*/
+  margin: 3% 10%;
+  /*Pour ajouter de l'ombre a notre tableau */
+  box-shadow: 12px 0 15px -2px #335e6f, -10px 0 8px -2px #335e6f;
+  /*Pour definir les bordures du tableau ; la taille de la bordure ,son style et la couleur de la bordure  .*/
+  border: 0.5px solid #014148;
+}
+
+th {
+  /*Definir la couleur du background de l'en tete du tableau  */
+  background-color: #80CED7;
+  /*Definir un padding de 15px pour le top,right,bottom,left*/
+  padding: 15px;
+  /*Definir la taille d'ecriture de l'en-tête du tableau*/
+  font-size: 1.25em;
+
+}
+
+td {
+  /*Definir un padding de 8px (top,right,bottom,left)pour toute les colonnes du tableau*/
+  padding: 8px;
+}
+
+caption {
+  /*padding de 3% pour le top,right,bottom,left pour le titre du tableau*/
+  padding: 3%;
+}
+
+.tabSoustitre {
+  /*padding de 1.5% pour le top,right,bottom,left du sous titre du tableau qui est defnit avec la classe tabSoustitre */
+  padding: 1.5%;
+  /*Definir la taille d'ecriture de ce sous titre*/
+  font-size: 125%;
+  /*Definir la couleur du background de cette classe (ie pour toute la ligne ou se trouve le sous titre) */
+  background-color: #c7e3ea;
+  /*Definir la postion du texte (mettre le texte dans le centre)*/
+  text-align: center;
+
+}
+
+/*en cas ou la souris passe (hover)sur n'importe ligne du tableau ses changement arriveront */
+tr:hover {
+  transform: scale(1);/*permet de modifier la taille d'un élément avec un facteur d'échelle sur deux dimensions pour donne l effet qu on voit */
+  box-shadow: 3px 3px 12px;
+}
+
+.tableFixHead {
+  height: 550px;
+}
+
+thead {
+  position: sticky;/*pour que le thead soit fixe quand on scroll le tableau*/
+  top: 0;
+}
